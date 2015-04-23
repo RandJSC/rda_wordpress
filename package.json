@@ -1,0 +1,62 @@
+{
+  "name": "rda-wordpress",
+  "version": "0.1.0",
+  "description": "WordPress theme for Ronald Diskin Associates",
+  "repository": {
+    "type": "git",
+    "url": "git@files.fifthroomcreative.com:mikegreen/rda-wordpress.git"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "Mike Green <mike@fifthroomcreative.com>",
+  "contributors": [
+    {
+      "name": "Steve Scales",
+      "email": "steves@fifthroomcreative.com"
+    },
+    {
+      "name": "Mike Green",
+      "email": "mike@fifthroomcreative.com"
+    }
+  ],
+  "scripts": {
+    "start": "gulp serve --dev"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.5.2",
+    "chalk": "^1.0.0",
+    "del": "^1.1.1",
+    "glob": "^5.0.3",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-filter": "^2.0.2",
+    "gulp-helptext": "0.0.10",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-insert": "^0.4.0",
+    "gulp-load-plugins": "^0.9.0",
+    "gulp-pleeease": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^1.3.3",
+    "gulp-shell": "^0.4.0",
+    "gulp-size": "^1.2.1",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-ssh": "^0.3.3",
+    "gulp-template": "^3.0.0",
+    "gulp-uglifyjs": "^0.6.1",
+    "gulp-util": "^3.0.4",
+    "gulp-watch": "^4.2.3",
+    "gulp-zip": "^3.0.2",
+    "gulp-zopfli": "^1.0.0",
+    "handlebars": "^3.0.1",
+    "imagemin-pngcrush": "^4.0.0",
+    "lazypipe": "^0.2.2",
+    "lodash": "^3.6.0",
+    "map-stream": "0.0.5",
+    "node-notifier": "^4.1.2",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.0.2"
+  }
+}
