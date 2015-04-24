@@ -1,0 +1,64 @@
+// ==========================================================================
+// Global Variables
+// ==========================================================================
+
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+8
+// Descriptive Base Colors
+
+$white : #fff;
+$black : #0b0b0b;
+$grey  : #797e83;
+
+
+$dark-blue    : #00235D;
+$light-blue   : #484e88;
+$light-gold   : #887944;
+$dark-brown   : #352D12;
+$light-cream  : #F2EFDF;
+
+$dark-text    : #444;
+$light-text   : #747474;
+
+
+// Color Usage
+
+$color-primary         : $dark-blue;
+$color-primary-light   : $light-blue;
+$color-secondary       : $dark-brown;
+
+// Slider Shadow
+
+$slider-shadow    : 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+// Color Palette Modifiers
+
+$color-palettes: (
+	grey: (
+		xx-light : lighten($grey, 43%),
+		x-light  : lighten($grey, 35%),
+	  light    : lighten($grey, 12%),
+	  base     : $grey,
+	 	dark     : darken($grey, 8%),
+	 	x-dark   : darken($grey, 16%)
+	),
+	black: (
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 10%)
+	)
+);
+
+
+// Border radius
+
+$br--default    : .4em;
+$br--round      : 50%;
+
+// Transitions
+$trns-color : background-color .3s ease;
+$trns-duration  : .3s;

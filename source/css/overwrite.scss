@@ -1,3 +1,6 @@
+@import "overwrite";
+
+
 .alternative-heading::after, .alternative-heading--404::after, .sidebar__headings::after, .footer .footer__headings::after,
 .jumbotron__category::after, .hentry__title::after, .panel-grid .widget-title::after, body.woocommerce-page nav.woocommerce-pagination ul li a:hover,
 body.woocommerce-page nav.woocommerce-pagination ul li span.current, body.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active ,
@@ -28,7 +31,7 @@ body.woocommerce-page ul.products li.product a:hover img, .woocommerce ul.produc
 blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus, .btn-primary:focus, .post-password-form > p > input,
 .logo-panel img:hover  { border-color: #00235D; }
 .navigation--top > li:hover > a::after { border-color: #00235D transparent transparent transparent; }
-.wc-proceed-to-checkout a.checkout-button {background-color: #00235D !Important;}
+.wc-proceed-to-checkout a.checkout-button {background-color: #00235D !important;}
 #filters li.active a, #filters li:hover a{border-bottom-color:#00235D}
 @media (min-width: 992px) { .navigation--main > li:hover > a { border-top-color: #00235D } }
 @media (min-width: 992px) { .navigation--main .sub-menu > li > a {  background: #00235D}}
@@ -43,41 +46,10 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 
 
 @media (min-width: 480px) {
-.logo {
+	.logo {
   /* max-width: 100%; */
   max-width: 330px;
 	}
-}
-
-
-/* COLORS */
-
-.dark-blue {
-	background: #00235D;
-}
-
-.light-blue {
-	background: #484e88;
-}
-
-.light-gold {
-	background: #887944;
-}
-
-.dark-brown {
-	background: #352D12;
-}
-
-.light-cream {
-	background: #F2EFDF;
-}
-
-.dark-text {
-	color: #444;
-}
-
-.light-text {
-	color: #747474;
 }
 
 
@@ -129,6 +101,7 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 @media (min-width: 992px) {
 .carousel-content {
 	background: rgba(53,45,18, .95);
+	}
 }
 
 .jumbotron__category h6 {
@@ -143,7 +116,7 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 }
 
 .btn-primary:hover {
-	background: #96AAD3;
+	background: $color-primary-light ;
 	color: #fff;
 	border:none;
 }
