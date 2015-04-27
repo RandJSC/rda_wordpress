@@ -125,7 +125,7 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 }
 
 .promo {
-	background: #00235D;
+	background: $blue;
 	color: #fff;
 }
 
@@ -134,24 +134,56 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 }
 
 .btn-default {
-	background: $light-gold;
+	background: $light-cream;
 	border: none;
-	color: $white;
+	color: $light-gold;
 }
 
 .btn-default:hover {
-	background: $light-cream;
-	color: $light-gold;
+	background: $light-gold;
+	color: $white;
 	border: none;
 }
 
+.master-container {
+	margin-bottom: 0;
+}
+
 /* footer */
+
+.footer {
+	background-color: $color-primary-dark;
+	background-image: url('../images/backgrounds/RDA-background.svg');
+	background-repeat: no-repeat;
+	background-size: 700px;
+	background-position: 10%;
+
+	a , p {
+		color: $white;
+	}
+}
+
+.footer__headings {
+	color: $white;
+
+}
 .footer-bottom {
-	background: $color-primary;
+	background: $dark-dark-brown;
 	color: #fff;
 	a {
 		color: #fff;
 	}
+}
+
+.footer .btn-primary {
+	color: $white;
+	&:hover {
+		color: #fff;
+	}
+}
+
+.widget_text img.footer__logo {
+	max-width: 300px;
 }
 
 /* NAVIGATION */
@@ -186,4 +218,24 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 			}
 		}
 	}
+}
+
+.custom-promo-box {
+	background: $light-cream;
+	padding: 30px;
+}
+
+a {
+	color: $color-primary-light;
+}
+
+.alternative-heading::after, .alternative-heading--404::after, .sidebar__headings::after, .footer .footer__headings::after, .jumbotron__category::after, .hentry__title::after, .panel-grid .widget-title::after, body.woocommerce-page div.product .woocommerce-tabs h2::after, body.woocommerce-page .short-description::after, body.woocommerce-page .cart-collaterals .cart_totals h2::after, body.woocommerce-page .cart-collaterals .shipping_calculator h2::after {
+  position: absolute;
+  content: "";
+  background-color: $color-primary-light;
+  height: 3px;
+  width: 30px;
+  bottom: -1px;
+  left: 0;
+
 }

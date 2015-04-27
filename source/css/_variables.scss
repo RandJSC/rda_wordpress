@@ -16,11 +16,13 @@ $grey  : #797e83;
 $light-grey : #e7e7e7;
 
 
-$dark-blue    : #00235D;
+$blue         : #00235D;
+$dark-blue    : #202434;
 $light-blue   : #4077BC;
 $light-gold   : #887944;
 $dark-brown   : #352D12;
 $light-cream  : #F2EFDF;
+$dark-dark-brown: #3D3535;
 
 $dark-text    : #444;
 $light-text   : #747474;
@@ -28,8 +30,9 @@ $light-text   : #747474;
 
 // Color Usage
 
-$color-primary         : $dark-blue;
+$color-primary         : $blue;
 $color-primary-light   : $light-blue;
+$color-primary-dark		 : $dark-blue;
 $color-secondary       : $dark-brown;
 
 // Slider Shadow
