@@ -1,6 +1,6 @@
-@import "overwrite";
+@import "variables";
 
-
+/*
 .alternative-heading::after, .alternative-heading--404::after, .sidebar__headings::after, .footer .footer__headings::after,
 .jumbotron__category::after, .hentry__title::after, .panel-grid .widget-title::after, body.woocommerce-page nav.woocommerce-pagination ul li a:hover,
 body.woocommerce-page nav.woocommerce-pagination ul li span.current, body.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active ,
@@ -44,7 +44,7 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 }
 .widget_tag_cloud a:hover, body.woocommerce-page a.button:hover, body.woocommerce-page input.button:hover, body.woocommerce-page input.button.alt:hover, body.woocommerce-page button.button:hover{background:#4d91ef !important}
 
-
+ */
 @media (min-width: 480px) {
 	.logo {
   /* max-width: 100%; */
@@ -108,6 +108,9 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 	color: #fff;
 }
 
+
+/* BUTTON */
+
 .btn-primary {
 	background: #4077BC;
 	color: #fff;
@@ -116,7 +119,7 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 }
 
 .btn-primary:hover {
-	background: $color-primary-light ;
+	background: #3B5576 ;
 	color: #fff;
 	border:none;
 }
@@ -131,12 +134,56 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 }
 
 .btn-default {
-	background: #F2EFDF;
+	background: $light-gold;
 	border: none;
+	color: $white;
 }
 
 .btn-default:hover {
-	background: #887944;
-	color: #fff;
+	background: $light-cream;
+	color: $light-gold;
 	border: none;
+}
+
+/* footer */
+.footer-bottom {
+	background: $color-primary;
+	color: #fff;
+	a {
+		color: #fff;
+	}
+}
+
+/* NAVIGATION */
+
+@media (min-width: 992px) {
+	.navigation--main  {
+
+		& > li {
+
+			&:hover > a {
+				border-top: 3px solid $color-primary-light;
+			}
+		}
+
+		.sub-menu {
+
+			border-top: 2px solid $color-primary-light;
+
+			& > li {
+
+				& > a {
+				  color: #333333;
+				  background: $light-cream;
+				  border-bottom: 1px solid $light-grey;
+				  padding: 12px 30px 12px 30px;
+
+					&:hover {
+							background: $color-primary-light;
+							color: $white;
+					}
+				}
+			}
+		}
+	}
 }
