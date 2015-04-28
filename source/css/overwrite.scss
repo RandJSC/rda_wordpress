@@ -52,7 +52,6 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 	}
 }
 
-
 /* header */
 
 .header {
@@ -72,7 +71,7 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 }
 
 .navigation--top > li > a:hover {
-	color: #999;
+	color: $color-primary-light;
 }
 
 .icon-box__title {
@@ -82,17 +81,44 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
   color: #747474;
 }
 
+.widget-icon-box .icon-box:hover .fa {
+  color: $color-primary-light;;
+}
+
 /* NAVIGATION COLOR */
 
 @media (min-width: 992px) {
 .navigation {
   position: relative;
   background-color: #f9f9f9;
-
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 	margin-bottom: -41px;
   text-align: center;
   z-index: 210;
+	}
+}
+
+.navigation--main > .menu-item-has-children>a::after {
+  color: $dark-text;
+}
+
+.navigation--main > li:hover > a::after {
+  color: $dark-text;
+}
+
+/* MOBILE NAVIGATION */
+
+.navigation--main > li > a {
+  color: $dark-text;
+	&:hover {
+		color: $color-primary-light;
+	}
+}
+
+.navigation--main .sub-menu > li > a {
+  color: $dark-text;
+	&:hover {
+		color: $color-primary-light;
 	}
 }
 
@@ -163,10 +189,12 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 	}
 }
 
+
+
 .footer__headings {
 	color: $white;
-
 }
+
 .footer-bottom {
 	background: $dark-dark-brown;
 	color: #fff;
@@ -180,6 +208,10 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 	&:hover {
 		color: #fff;
 	}
+}
+
+.footer .widget_nav_menu ul > li > a, .footer .textwidget{
+	color: $white;
 }
 
 .widget_text img.footer__logo {
@@ -211,8 +243,8 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 				  padding: 12px 30px 12px 30px;
 
 					&:hover {
-							background: $color-primary-light;
-							color: $white;
+						background: $color-primary-light;
+						color: $white;
 					}
 				}
 			}
@@ -221,18 +253,19 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 }
 
 .custom-promo-box {
-	background: $light-cream;
+	background: #eee;
 	padding: 30px;
 }
 
 a {
 	color: $color-primary-light;
+	&:hover {
+		color: $color-primary;
+	}
 }
 
 .alternative-heading::after, .alternative-heading--404::after, .sidebar__headings::after, .footer .footer__headings::after, .jumbotron__category::after, .hentry__title::after, .panel-grid .widget-title::after, body.woocommerce-page div.product .woocommerce-tabs h2::after, body.woocommerce-page .short-description::after, body.woocommerce-page .cart-collaterals .cart_totals h2::after, body.woocommerce-page .cart-collaterals .shipping_calculator h2::after {
   background-color: $color-primary-light;
-
-
 }
 
 /* HEADER */
@@ -246,4 +279,109 @@ a {
 
 .main-title__secondary::before {
   background: $color-primary-light;
+}
+
+.sidebar .widget_nav_menu ul > li.current-menu-item a {
+  background: $color-primary;
+  color: $white;
+}
+
+.sidebar .widget_nav_menu ul > li > a:hover {
+	color: $white;
+	background: $color-primary-light;
+}
+
+/* HOMEPAGE MASTER CONTAINER  */
+
+#homepage-master-container {
+	overflow:hidden;
+}
+
+.brochure-box:hover {
+  background-color: $color-primary-light;
+	color: $white;
+	.brochure-box__text {
+		color: $white;
+	}
+}
+
+/* PAGINATION  */
+
+.pagination li {
+	&:hover a {
+		color: $white;
+	}
+	&:hover {
+		background: $color-primary-light;
+	}
+
+ 	& .current {
+  	display: block;
+  	color: $white;
+  	background: $color-primary;
+	}
+}
+
+.widget_tag_cloud a {
+  background: $color-primary-light;
+	color: $white;
+	&:hover {
+		background: $color-primary;
+		color: $white;
+	}
+}
+
+.widget_search .search-submit {
+  background: $color-primary-light;
+  color: $white;
+	&:hover {
+		background: $color-primary;
+		color: $white;
+	}
+
+}
+
+.page-box__picture > img, .master-container img, #homepage-master-container img {
+  border: solid 5px #CDCDCD;
+}
+
+a > img.alignRight {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+blockquote {
+	border-color: $color-primary-light;
+}
+
+/* PRESENTATION ONLY */
+
+.link {
+	&-hover {
+		color: $color-primary;
+		text-decoration: underline;
+	}
+	&-visited {
+		color: $color-primary-dark;
+	}
+}
+
+.main-title {
+	&__primary, &__secondary{
+		font-family: "Montserrat", Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		color: #333333;
+		letter-spacing: -0.5px;
+	}
+
+}
+
+
+.breadcrumbs.blog-post-bc {
+
+
+	@media (min-width: 992px) {
+		margin-top: 37px;
+		margin-bottom: 34px;
+	}
 }
