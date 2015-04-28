@@ -145,9 +145,9 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 	border: none;
 }
 
-.master-container {
+/* .master-container {
 	margin-bottom: 0;
-}
+} */
 
 /* footer */
 
@@ -230,12 +230,20 @@ a {
 }
 
 .alternative-heading::after, .alternative-heading--404::after, .sidebar__headings::after, .footer .footer__headings::after, .jumbotron__category::after, .hentry__title::after, .panel-grid .widget-title::after, body.woocommerce-page div.product .woocommerce-tabs h2::after, body.woocommerce-page .short-description::after, body.woocommerce-page .cart-collaterals .cart_totals h2::after, body.woocommerce-page .cart-collaterals .shipping_calculator h2::after {
-  position: absolute;
-  content: "";
   background-color: $color-primary-light;
-  height: 3px;
-  width: 30px;
-  bottom: -1px;
-  left: 0;
 
+
+}
+
+/* HEADER */
+
+.social-icons__link {
+  color: $color-primary-light;
+	&:hover {
+		color: $color-primary-dark;
+	}
+}
+
+.main-title__secondary::before {
+  background: $color-primary-light;
 }
