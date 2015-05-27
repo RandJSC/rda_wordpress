@@ -66,6 +66,10 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 	color: #fff;
 }
 
+.logo {
+  max-width: 300px;
+}
+
 .navigation--top a {
 	color: #fff;
 }
@@ -82,7 +86,7 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 }
 
 .widget-icon-box .icon-box:hover .fa {
-  color: $color-primary-light;;
+  color: $color-primary-light;
 }
 
 /* NAVIGATION COLOR */
@@ -110,6 +114,7 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 
 .navigation--main > li > a {
   color: $dark-text;
+	font-size: 14px;
 	&:hover {
 		color: $color-primary-light;
 	}
@@ -171,10 +176,6 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 	border: none;
 }
 
-/* .master-container {
-	margin-bottom: 0;
-} */
-
 /* footer */
 
 .footer {
@@ -183,13 +184,12 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 	background-repeat: no-repeat;
 	background-size: 700px;
 	background-position: 10%;
+	border-top: $color-primary-light solid 8px ;
 
 	a , p {
 		color: $white;
 	}
 }
-
-
 
 .footer__headings {
 	color: $white;
@@ -238,7 +238,7 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 
 				& > a {
 				  color: #333333;
-				  background: $light-cream;
+				  background: $white;
 				  border-bottom: 1px solid $light-grey;
 				  padding: 12px 30px 12px 30px;
 
@@ -275,6 +275,11 @@ a {
 	&:hover {
 		color: $color-primary-dark;
 	}
+}
+
+
+.widget-icon-box {
+	border-color: #e7e7e7;
 }
 
 .main-title__secondary::before {
@@ -366,7 +371,10 @@ blockquote {
 	}
 }
 
+/* TITLE AREA */
+
 .main-title {
+	background-image: url(../images/title-area-pattern.png);
 	&__primary, &__secondary{
 		font-family: "Montserrat", Helvetica, Arial, sans-serif;
 		font-weight: bold;
@@ -374,14 +382,168 @@ blockquote {
 		letter-spacing: -0.5px;
 	}
 
+	@media (min-width: 992px) {
+		padding: 77px 0 44px 0;
+	}
 }
 
-
 .breadcrumbs.blog-post-bc {
-
 
 	@media (min-width: 992px) {
 		margin-top: 37px;
 		margin-bottom: 34px;
 	}
+}
+
+.resource-listing {
+		margin-bottom: 30px;
+	a {
+		line-height: 1.5;
+		font-weight: 300;
+	}
+	 li h5 {
+		font-size: 16px;
+		font-weight: 300;
+		font-family: 'Source Sans Pro' Helvetica, Arial, sans-serif;
+	}
+}
+
+.resource-block {
+	margin-bottom: 48px;
+	& a.btn {
+		float:right;
+	}
+}
+
+.resource-title {
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	&::after {
+		position: absolute;
+		content: "";
+		background-color: $color-primary;
+		height: 3px;
+		width: 30px;
+		bottom: -1px;
+		left: 0;
+	}
+}
+body {
+	font-size: 16px;
+}
+
+.logo-pad {
+		padding: 10px 0;
+}
+
+.jumbotron__content {
+  color: $light-cream;
+}
+.jumbotron__title {
+  color: $white;
+}
+
+.carousel .jumbotron__title h1 {
+	color: $white;
+}
+
+.page-box__picture--inline > img {
+	width: auto;
+	margin: 10px;
+
+}
+
+@media (min-width: 992px) {
+	.footer {
+  	padding: 60px 0 0 0;
+	}
+}
+
+.footer .widget_nav_menu ul > li > a:hover {
+	color: #b8b8b8;
+}
+
+.footer .read-more:hover {
+  color: $color-primary-light;
+}
+
+/* Contact Forms */
+
+.footer {
+	.wpcf7-text, .wpcf7-textarea 	{
+		background: #4F4F56;
+		border: 1px solid #66666E;
+		padding: 5px;
+		color: $white;
+	}
+	.wpcf7-text:focus, .wpcf7-textarea:focus {
+		border-color: #dddddd;
+		background: #616169;
+	}
+
+	.wpcf7-textarea { height: 160px;}
+}
+
+.jumbotron__category h6 {
+ text-transform: uppercase;
+}
+
+.footer-bottom a {
+  color: #fff;
+	font-style: italic;
+	&:hover {
+		color: $light-cream;
+	}
+}
+
+.navbar-toggle {
+  background: $color-primary-light;
+  transition: all 200ms ease-out;
+	span {
+		color: #fff;
+	}
+	&:hover {
+		background: $color-primary;
+	}
+}
+
+.navbar-toggle .icon-bar {
+	background: #fff;
+}
+
+.topbar__form--group {
+	& input[type="search"] {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	& button[type="submit"] {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		margin-left: -3px;
+	}
+
+}
+.topbar__search {
+  width: 100%;
+	max-width: 40%;
+  border: 1px solid #dddddd;
+  background-color: #eeeeee;
+  padding: 6px 5px 6px 10px;
+  font-weight: normal;
+  height: 31px;
+  border-radius: 2px;
+	color: $light-text;
+	@media screen and ( max-width: 480px ) {
+		max-width: 60%;
+	}
+}
+
+.topbar__button {
+	background: $color-primary-light;
+	margin-left:0;
+	border-radius: 2px;
+	border: 1px solid #748094;
 }
