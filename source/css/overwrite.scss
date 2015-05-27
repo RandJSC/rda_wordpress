@@ -45,12 +45,7 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 .widget_tag_cloud a:hover, body.woocommerce-page a.button:hover, body.woocommerce-page input.button:hover, body.woocommerce-page input.button.alt:hover, body.woocommerce-page button.button:hover{background:#4d91ef !important}
 
  */
-@media (min-width: 480px) {
-	.logo {
-  /* max-width: 100%; */
-  max-width: 330px;
-	}
-}
+
 
 /* header */
 
@@ -68,6 +63,10 @@ blockquote, #comments-submit-button, .btn-primary, #comments-submit-button:focus
 
 .logo {
   max-width: 300px;
+	margin-top: 10px;
+	@media screen and (max-width: 480px) {
+		max-width: 100%;
+	}
 }
 
 .navigation--top a {
@@ -546,4 +545,10 @@ body {
 	margin-left:0;
 	border-radius: 2px;
 	border: 1px solid #748094;
+}
+
+@media screen and (min-width: 992px) {
+	.navigation--top > li > a {
+  	padding: 10px 0 7px 15px;
+	}
 }
